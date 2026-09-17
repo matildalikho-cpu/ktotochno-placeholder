@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Кто точно знает. Сервис живого опыта. Связаться с нами: hello@ktotochno.ru">
+  <meta name="theme-color" content="#f8f2eb">
+  <title>Кто точно знает</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #f8f2eb; }
+    main { min-height: 100vh; min-height: 100svh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .art { position: relative; width: min(100vw, 150vh, 1536px); flex: none; }
+    img { display: block; width: 100%; height: auto; }
+    .contact { position: absolute; left: 42%; top: 64.5%; width: 16%; height: 5%; min-height: 44px; border-radius: 4px; }
+    .contact:focus-visible { outline: 3px solid #81627a; outline-offset: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    @media (max-width: 600px) { .art { width: 270vw; max-width: 1250px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="sr-only">Кто точно знает</h1>
+    <div class="art">
+      <img src="placeholder.png" width="1536" height="1024" alt="Кто точно знает. Поле «Пароль», кнопка «Жми». Тот сможет пройти. Статичная заглушка: вход пока недоступен.">
+      <a class="contact" href="mailto:hello@ktotochno.ru" aria-label="Написать на hello@ktotochno.ru"><span class="sr-only">hello@ktotochno.ru</span></a>
+    </div>
+  </main>
+</body>
+</html>
